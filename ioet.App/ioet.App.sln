@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ioet.App", "ioet.App\ioet.App.csproj", "{606DCEA8-97CC-4314-A7DF-83A8F4E35DB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{606DCEA8-97CC-4314-A7DF-83A8F4E35DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606DCEA8-97CC-4314-A7DF-83A8F4E35DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606DCEA8-97CC-4314-A7DF-83A8F4E35DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606DCEA8-97CC-4314-A7DF-83A8F4E35DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C61F9820-0FB4-4674-8B8C-5EF813A4862E}
+	EndGlobalSection
+EndGlobal
