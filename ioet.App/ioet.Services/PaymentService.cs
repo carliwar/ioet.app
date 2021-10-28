@@ -10,7 +10,6 @@ namespace ioet.Services
     {
         public int GetPayment(List<DayTime> records)
         {
-            var result = 0;
             var availableHours = new int[] { 0, 0, 0, 0, 0, 0 };
 
             if (records == null)
@@ -31,7 +30,7 @@ namespace ioet.Services
             }
 
             // Sum all worked hours
-            result = availableHours[0] * 25; // MO-FR 00-01 to 09:00 ** SA-SU 18:01 to 00:00
+            int result = availableHours[0] * 25; // MO-FR 00-01 to 09:00 ** SA-SU 18:01 to 00:00
             result += availableHours[1] * 15; // 09-01 to 18:00
             result += availableHours[2] * 20; // 18-01 to 00:00 ** SA-SU 09:01 to 18:00
             result += availableHours[3] * 30; // SA-SU 00:01 to 09:00

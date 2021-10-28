@@ -9,4 +9,8 @@
     <PackageReference Include="Syroot.Windows.IO.KnownFolders" Version="1.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ioet.Services\ioet.Services.csproj" />
+  </ItemGroup>
+
 </Project>
