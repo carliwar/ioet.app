@@ -1,18 +1,28 @@
 ﻿using ioet.Core.Enums;
+using ioet.Core.Interfaces;
 using ioet.Core.Model;
 using System;
 using System.Collections.Generic;
 
 namespace ioet.Services
 {
-    public class MapperService
+    public class MapperService : IMapper
     {
         public List<EmployeeWorkingTime> Map(string[] input)
         {
             var result = new List<EmployeeWorkingTime>();
 
             ValidateInput(input);
+            Map(input, result);
 
+            return result;
+
+        }
+
+        #region Private Methods
+
+        private static void Map(string[] input, List<EmployeeWorkingTime> result)
+        {
             for (int i = 0; i < input.Length; i++)
             {
                 var currentInput = input[i];
@@ -36,17 +46,9 @@ namespace ioet.Services
 
                     currentObject.Schedule.Add(currentWorkTime);
                 }
-
-
                 result.Add(currentObject);
             }
-
-
-            return result;
-
         }
-
-        #region Private Methods
         private static void SetHoursOfWork(string[] scheduleDays, int j, DayTime currentWorkTime)
         {
             var timeWithoutDay = scheduleDays[j].Remove(0, 2);
