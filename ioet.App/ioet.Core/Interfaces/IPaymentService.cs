@@ -5,6 +5,6 @@ namespace ioet.Core.Interfaces
 {
     public interface IPaymentService
     {
-        List<string> GetPayments(List<EmployeeWorkingTime> records);
+        int GetPayment(List<DayTime> records);
     }
 }
